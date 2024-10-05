@@ -1,5 +1,5 @@
 function randomDamage(min, max){
-    return Math.floor.Math.random() * (max -min) + min;
+    return Math.floor(Math.random() * (max -min) + min);
 }
 
 const app = Vue.createApp({
@@ -7,6 +7,14 @@ const app = Vue.createApp({
         return{
             playerHealth: 100,
             monsterHealth: 100
+        }
+    },
+    computed:{
+        monsterClassStyle(){
+            return {width: this.monsterHealth + '%'}
+        },
+        playerClassStyle(){
+            return {width: this.playerHealth + '%'}
         }
     },
     methods: {
