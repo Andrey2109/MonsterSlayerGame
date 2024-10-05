@@ -13,11 +13,11 @@ const app = Vue.createApp({
         attackPlayer(){
             let damage =randomDamage(5, 12)
             this.playerHealth -= damage
-            this.attackMonster()
         },
         attackMonster(){
             let damage = randomDamage(8, 15)
             this.monsterHealth -= damage
+            this.attackPlayer()
         }
     }
 
