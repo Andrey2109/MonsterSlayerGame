@@ -43,13 +43,13 @@ const app = Vue.createApp({
         attackPlayer(){
             const damage =randomValue(5, 13)
             this.playerHealth -= damage
-            this.addLogMessage('Monster', 'Attack', damage)
+            this.addLogMessage('monster', 'Attack', damage)
         },
         attackMonster(){
             this.currentRound++;
             const damage = randomValue(6, 13)
             this.monsterHealth -= damage
-            this.addLogMessage('Player', 'Attack', damage)
+            this.addLogMessage('player', 'Attack', damage)
             this.attackPlayer()
             
         },
@@ -57,7 +57,7 @@ const app = Vue.createApp({
             this.currentRound++;
             const damage = randomValue(12, 25)
             this.monsterHealth -= damage
-            this.addLogMessage('Player', 'Attack', damage)
+            this.addLogMessage('player', 'Attack', damage)
             this.attackPlayer()
             
 
@@ -70,7 +70,7 @@ const app = Vue.createApp({
             } else{
                 this.playerHealth += healValue
             }
-            this.addLogMessage('Player', 'heal', healValue)
+            this.addLogMessage('player', 'heal', healValue)
             this.attackPlayer()
             
         },
