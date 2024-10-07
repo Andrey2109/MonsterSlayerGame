@@ -29,4 +29,4 @@ Monster Slayer is a simple browser-based game built using Vue.js. The game allow
 
 git clone <https://github.com/Andrey2109/MonsterSlayerGame.git>
 
-Open the index.html file in your browser.
+Open the `index.html` file in your browser.
