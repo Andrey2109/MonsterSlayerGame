@@ -1,7 +1,7 @@
 # MonsterSlayerGame
 
 ## Screenshot
-![Game Screenshot](prj-monster-01-starting-setup\image\screenshot_game.png)
+![Game Screenshot](prj-monster-01-starting-setup/image/screenshot_game.png)
 
 
 Monster Slayer is a simple browser-based game built using Vue.js. The game allows the player to battle against a monster, using a variety of actions like attacking, special attacking, and healing. It’s a great introductory project for learning Vue.js and basic JavaScript game logic.
